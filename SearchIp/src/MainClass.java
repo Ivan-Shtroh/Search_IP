@@ -58,8 +58,6 @@ public class MainClass {
                 String[] str1 = new String(buffer, "UTF-16").split("/n");
                 for (String i : str1) {
                     if (i.contains(pattern)) {
-// File dest = new File(f2.getPath() + File.separator + f1.getName()+f1.getParent().substring(f1.getParent().lastIndexOf(File.separator)+1,f1.getParent().length()));
-//Files.copy(f1.toPath(), dest.toPath());
                         File source = new File(f1.getParent());
                         File dest = new File(f2.getPath() + File.separator + source.getName());
                         File ipFile = new File(f1.getParent() + File.separator + "ip");
@@ -92,12 +90,6 @@ public class MainClass {
 
             }
         } else {
-/* try (FileInputStream in = new FileInputStream(source); FileOutputStream fo = new FileOutputStream(dest)) {
-byte [] buffer = new byte [in.available()];
-int c;
-while ((c = in.read(buffer))!=-1) {
-fo.write(buffer);
-}*/
             if (!dest.exists())
                 Files.copy(source.toPath(), dest.toPath());
         }
