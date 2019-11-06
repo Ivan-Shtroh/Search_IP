@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SearchIp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SearchIp_jar</output-path>
+    <root id="archive" name="SearchIp.jar">
+      <element id="module-output" name="SearchIp" />
+    </root>
+  </artifact>
+</component>
