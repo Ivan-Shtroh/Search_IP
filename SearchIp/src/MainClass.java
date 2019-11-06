@@ -2,6 +2,9 @@ mport java.io.*;
 import java.nio.file.Files;
 import java.util.Scanner;
 
+/**author I.Shtroh, V.Shtroh
+*/
+
 
 public class MainClass {
 
